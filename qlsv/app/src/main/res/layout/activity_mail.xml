@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/tieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="Nhập tiêu đề"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/noiDung"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="20dp"
+        android:hint="Nhập nội dung"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/huy"
+            app:backgroundTint="@null"
+            android:background="@drawable/huy"
+            android:layout_width="150dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/gui"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/luu"
+            android:text="Gửi"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

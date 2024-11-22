@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context=".ThongKe">
+    <Spinner
+        android:id="@+id/luaChon"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="Suspicious0dp" />
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_weight="8.25"
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_weight="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/bottomNavigationView"
+        android:background="@drawable/bottom_bg"
+        android:elevation="2dp"
+        app:menu="@menu/buttom_nav_menu"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="unlabeled" />
+</LinearLayout>

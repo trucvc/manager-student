@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/teacher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GiaoDien"
+        tools:targetApi="31">
+        <activity
+            android:name=".HocPhi"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePass"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongKe"
+            android:exported="false" />
+        <activity
+            android:name=".Mail"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDiemMonHoc.SuaDiem"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDiemMonHoc.ChiTietDiem"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.ThemMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.SuaMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.ChiTietMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.DanhSachMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.SinhVien.MonHocSinhVienThemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.GiangVien.MonHocGiangVienThem"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.GiangVien.DanhSachMonHocGiangVien"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMonHoc.SinhVien.DanhSachMonHocSinhVien"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.KhoaSua"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.KhoaThem"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.KhoaChiTiet"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.KhoaDanhSach"
+            android:exported="false" />
+        <activity
+            android:name=".GiangVien.GiangVienThem"
+            android:exported="false" />
+        <activity
+            android:name=".GiangVien.GiangVienSua"
+            android:exported="false" />
+        <activity
+            android:name=".GiangVien.GiangVienChiTiet"
+            android:exported="false" />
+        <activity
+            android:name=".GiangVien.GiangVienDanhSach"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.SinhVien.SinhVienDiem"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.SinhVien.SinhVienThem"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.SinhVien.SinhVienSua"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.SinhVien.SinhVienChiTiet"
+            android:exported="false" />
+        <activity
+            android:name=".Khoa.SinhVien.SinhVienDanhSach"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
